@@ -1,0 +1,6 @@
+<h1>ShortyURLs</h1>
+<% @urls.each do |url| %>
+<p>
+<%= link_to url.random_id, url_path(:id => url.random_id) %> => <%= url.original %>
+</p>
+<% end %>
