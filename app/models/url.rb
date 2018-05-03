@@ -1,3 +1,3 @@
 class Url < ApplicationRecord
-  validates :original, :presence => true
+  validates :originalurl, :presence => true
 end
