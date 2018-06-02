@@ -1,18 +1,22 @@
+<%= stylesheet_link_tag "new.scss.css" %>
 
-<h1>Fun-Sized URL</h1>
-<h2>Short is a good thing when it comes to urls...</h2>
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="jumbotron vertical-center">
+      <h1 class="display-3">Create a Fun-Sized URL</h1>
+      <p class="lead">Because small is a good thing when it comes to links... Just copy a link here to shorten it!</p>
 
-<%= image_tag("shorty_bootstrap.jpg", :alt => "gerbils are cute, like the url that we're about to generate.") %>
 <% @url.errors.each do |attr, msg| %>
 <%= msg %> on <%= attr %>
 <% end %>
 
 <%= form_for @url do |f| %>
 <p>
-<%= f.label :link %> : <%= f.text_field :originalurl %>
+<%= f.label :link, :class => "link_label" %> : <%= f.text_field :originalurl, :class => "linkform" %>
 </p>
-<p>
-<%= f.hidden_field :random_id, :value => @url.random_id %>
-<%= f.submit "Minify responsibly, shorty! :) " %>
-</p>
+<p class="submit">
+<%= f.hidden_field :random_id, :value => @url.random_id, :class => "result" %>
+<%= f.submit "Click to Minify!", :class => "button" %>
 <% end %>
+
+</div>
+</div>

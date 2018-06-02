@@ -1,6 +1,11 @@
-<h1>ShortyURLs</h1>
+<%= stylesheet_link_tag "index.scss.css" %>
+<h1> Your URLs...</h1>
+
+<div class="col-md-2 col-md-offset-5"></div>
+
 <% @urls.each do |url| %>
 <p>
 <%= link_to url.random_id, url_path(:id => url.random_id) %> => <%= url.originalurl %>
 </p>
 <% end %>
+</div>

@@ -1,0 +1,37 @@
+body {
+background-image: url("shorty_bootstrap.jpg");
+background-size: auto;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+height: 100%;
+}
+
+.vertical-center {
+min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+margin-top: 25%;
+align-items: center;
+background-color: rgb(61, 90, 99, 0.7);
+color: white;
+}
+
+.link_label {
+  color: white;
+}
+
+.linkform {
+background-color: #E7AA7B;
+border-width: thin;
+border-style: solid;
+border-color: darkgrey;
+}
+
+.button {
+  background-color: rgb(61, 90, 99);
+  border-width: thin;
+  color: white;
+  font-size: 20px;
+  border-color: darkgrey;
+  padding-left: 3em;
+  padding-right: 3em;
+}
