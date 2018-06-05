@@ -7,6 +7,10 @@ background-repeat: no-repeat;
 height: 100%;
 }
 
+.jumbotron {
+  text-align: center;
+}
+
 .vertical-center {
 min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
 margin-top: 25%;
@@ -17,21 +21,28 @@ color: white;
 
 .link_label {
   color: white;
+  font-size: 14px;
 }
 
 .linkform {
-background-color: #E7AA7B;
+background-color: transparent;
+width: 30em;
 border-width: thin;
 border-style: solid;
-border-color: darkgrey;
+border-color: white;
 }
 
 .button {
-  background-color: rgb(61, 90, 99);
+  background-color: #4286f4;
   border-width: thin;
   color: white;
   font-size: 20px;
-  border-color: darkgrey;
-  padding-left: 3em;
-  padding-right: 3em;
+  border-style: none;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 20px;
+  align-items: center;
+
 }
